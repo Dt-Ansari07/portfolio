@@ -1,85 +1,98 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
-    color: white;
+    box-sizing: border-box;
 }
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Section */
-header {
+/* Profile Section */
+.profile {
     text-align: center;
     padding: 20px;
-    background-color: #1e1e1e;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.profile h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.profile p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.social-links a {
+    color: #1db954;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #fff;
 }
 
-header h1 {
-    font-size: 3rem;
-    color: #4CAF50;
+/* About Section */
+.about {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1db954;
+}
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
 }
 
-header p {
+/* Skills Section */
+.skills {
+    text-align: center;
+    margin-top: 40px;
+}
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.skill {
+    text-align: center;
+}
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.skill p {
     font-size: 1.2rem;
 }
 
-/* Skillset Section */
-#skills {
+/* Footer Section */
+footer {
+    text-align: center;
     margin-top: 40px;
-}
-
-#skills h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #4CAF50;
-    text-align: center;
-}
-
-.skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.skill {
-    background-color: #2a2a2a;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.skill h3 {
-    font-size: 1.5rem;
-    color: #4CAF50;
-}
-
-.skill p {
     font-size: 1rem;
-    color: #ccc;
-}
-
-.skill-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-/* Contact Section */
-#contact {
-    text-align: center;
-    margin-top: 40px;
-}
-
-#contact a {
-    color: #4CAF50;
-    text-decoration: none;
 }
