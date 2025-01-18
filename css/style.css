@@ -1,18 +1,21 @@
-/* Global Styles */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #121212; /* Dark background */
+    color: white;
 }
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
-}
+
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #1e1e1e;
     padding: 20px;
 }
 
@@ -21,89 +24,91 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
-    padding: 20px;
 }
-.profile-text {
-    max-width: 60%;
+
+.profile-info {
+    flex: 1;
+    text-align: left;
 }
-.profile h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+
+.profile-info h1 {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin: 0;
 }
-.title {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 10px;
-    color: #1db954;
+
+.profile-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
-.profile p {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-.social-links a {
-    color: #1db954;
-    margin: 0 10px;
-    text-decoration: none;
-}
-.social-links a:hover {
-    color: #fff;
-}
-.profile-pic img {
+
+.profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #4CAF50;
 }
 
 /* About Section */
-.about {
-    text-align: center;
+#about {
     margin-top: 40px;
-    padding: 20px;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-}
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #1db954;
-}
-.about p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
+    text-align: center;
 }
 
-/* Skills Section */
-.skills {
-    text-align: center;
-    margin-top: 40px;
-}
-.skills h2 {
+#about h2 {
     font-size: 2rem;
+    color: #4CAF50;
     margin-bottom: 20px;
 }
-.skills-list {
+
+#about p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Skillset Section */
+#skills {
+    margin-top: 40px;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.skills-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
 }
+
 .skill {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 200px;
     text-align: center;
-}
-.skill img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-}
-.skill p {
-    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer Section */
-footer {
-    text-align: center;
-    margin-top: 40px;
+.skill h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.skill p {
     font-size: 1rem;
+    color: #ccc;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
 }
