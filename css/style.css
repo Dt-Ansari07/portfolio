@@ -18,19 +18,24 @@ body {
 
 /* Profile Section */
 .profile {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
     padding: 20px;
 }
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+.profile-text {
+    max-width: 60%;
 }
 .profile h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #1db954;
 }
 .profile p {
     font-size: 1.1rem;
@@ -43,6 +48,12 @@ body {
 }
 .social-links a:hover {
     color: #fff;
+}
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* About Section */
