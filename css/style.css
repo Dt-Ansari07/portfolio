@@ -1,88 +1,85 @@
-/* General styles */
+/* General Styles */
 body {
-  background-color: #121212; /* Dark background */
-  color: #f5f5f5;            /* Light text */
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: white;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Section */
 header {
-  text-align: center;
-  padding: 20px;
-  background: #1e1e1e; /* Darker background */
-  border-bottom: 2px solid #f39c12; /* Accent color */
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
 }
 
 header h1 {
-  color: #f39c12; /* Bright accent color */
+    font-size: 3rem;
+    color: #4CAF50;
 }
 
 header p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
-.logo {
-  width: 100px;
-  border-radius: 50%;
+/* Skillset Section */
+#skills {
+    margin-top: 40px;
 }
 
-section {
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
-  background: #1e1e1e;
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    text-align: center;
 }
 
-section h2 {
-  color: #f39c12;
-  margin-bottom: 10px;
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-section h3 {
-  color: #e67e22;
+.skill {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.skill h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
 }
 
-ul li {
-  margin-bottom: 10px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #1e1e1e;
-  color: #aaa;
-}
-
-footer p {
-  font-size: 1rem;
-}
-
-/* Links styling */
-a {
-  color: #f39c12;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive design for mobile */
-@media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-  header p {
+.skill p {
     font-size: 1rem;
-  }
-  section {
-    padding: 15px;
-  }
+    color: #ccc;
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
 }
